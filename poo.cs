@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp5
 {
+    #region IPagable
     public interface IPagable
     {
         void ProcesarPago(decimal monto);
@@ -33,6 +34,7 @@ namespace ConsoleApp5
         {
             Console.WriteLine($"procesando pago de : {monto}");
         }
+        #endregion
     } 
 
     internal class Program
